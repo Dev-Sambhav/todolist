@@ -1,0 +1,77 @@
+.todo_container{
+    width: 100%;
+    overflow-y: scroll;
+    height: 52vh;
+    margin-top: 1.5rem;
+}
+
+/* custom scrollbar */
+.todo_container::-webkit-scrollbar {
+    width: 20px;
+  }
+  .todo_container::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  .todo_container::-webkit-scrollbar-thumb {
+    background-color: #a8bbbf;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  .todo_container::-webkit-scrollbar-thumb:hover {
+    background-color: var(--grey-400);
+  }
+
+.todo_item{
+    background-color: var(--bg-color);
+    margin-bottom: .3rem;
+    border-radius: 10px;
+}
+
+.todo_item, .todo_item_left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo_item_left .todo_text{
+    margin-left: .7rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.todo_item_left .todo_checkbox{
+    width: 18px;
+    height: 18px;
+    margin-left: 1rem;
+}
+
+.todo_item_right .btn_delete{
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.total_todo{
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin: 7px auto 3px;
+    text-align: center;
+    width: 30%;
+}
+
+.total_todo p{
+    margin: 0;
+    padding: 0;
+}
+
+.item_completed{
+    background-color: var(--item-completed);
+}
+
+.text_completed{
+    color: var(--bg-color) !important;
+    text-decoration-line: line-through;
+}

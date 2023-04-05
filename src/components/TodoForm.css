@@ -1,0 +1,30 @@
+.todo_form{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    margin-bottom: 1.2rem;
+  }
+  
+  .todo_input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #9C27B0;
+    width: 100%;
+    background: transparent;
+    padding: 7px;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .btn_add{
+    margin-left: 1rem;
+    padding: 12px 25px;
+    background-color: #9C27B0;
+    border: 1px solid #9C27B0;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+  }
